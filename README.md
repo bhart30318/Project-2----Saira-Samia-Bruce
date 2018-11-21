@@ -1342,17 +1342,104 @@ We noted that each team has a three letter country code.  The three letter code 
 	data = pd.read_csv("Europe/teams.csv")
 	data.head(10)
 
-	Column1	Column2	Column3	Column4
-0	aut	Austria	AUT	at
-1	bel	Belgium	BEL	be
-2	cyp	Cyprus	CYP	cy
-3	ger	Germany	GER	de
-4	est	Estonia	EST	ee
-5	esp	Spain	ESP	es
-6	fin	Finland	FIN	fi
-7	fra	France	FRA	fr
-8	gre	Greece	GRE	gr
-9	irl	Ireland	IRL	ie
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[56]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column1</th>
+      <th>Column2</th>
+      <th>Column3</th>
+      <th>Column4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>aut</td>
+      <td>Austria</td>
+      <td>AUT</td>
+      <td>at</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>bel</td>
+      <td>Belgium</td>
+      <td>BEL</td>
+      <td>be</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>cyp</td>
+      <td>Cyprus</td>
+      <td>CYP</td>
+      <td>cy</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ger</td>
+      <td>Germany</td>
+      <td>GER</td>
+      <td>de</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>est</td>
+      <td>Estonia</td>
+      <td>EST</td>
+      <td>ee</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>esp</td>
+      <td>Spain</td>
+      <td>ESP</td>
+      <td>es</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>fin</td>
+      <td>Finland</td>
+      <td>FIN</td>
+      <td>fi</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>fra</td>
+      <td>France</td>
+      <td>FRA</td>
+      <td>fr</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>gre</td>
+      <td>Greece</td>
+      <td>GRE</td>
+      <td>gr</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>irl</td>
+      <td>Ireland</td>
+      <td>IRL</td>
+      <td>ie</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 # Merging Database
 
@@ -1363,12 +1450,63 @@ We noted that each team has a three letter country code.  The three letter code 
 	df_a = pd.DataFrame(raw_data, columns = ['id', 'team_long_name', 'team_short_name'])
 	df_a
 
-id	team_long_name	team_short_name
-0	1	Austria	AUT
-1	2	Belgium	BEL
-2	3	Cyprus	CYP
-3	4	Germany	GER
-4	5	Estonia	EST
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[57]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Austria</td>
+      <td>AUT</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Belgium</td>
+      <td>BEL</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Cyprus</td>
+      <td>CYP</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Germany</td>
+      <td>GER</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Estonia</td>
+      <td>EST</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	raw_data = {
         'id': ['4', '5', '6', '7', '8'],
@@ -1377,12 +1515,63 @@ id	team_long_name	team_short_name
 	df_b = pd.DataFrame(raw_data, columns = ['id', 'team_long_name', 'team_short_name'])
 	df_b
 
-id	team_long_name	team_short_name
-0	4	KSV Cercle Brugge	Bonder
-1	5	RSC Anderlecht	Black
-2	6	KAA Gent	Balwner
-3	7	RAEC Mons	Brice
-4	8	FCV Dender EH	Btisan
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[58]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>KSV Cercle Brugge</td>
+      <td>Bonder</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>RSC Anderlecht</td>
+      <td>Black</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6</td>
+      <td>KAA Gent</td>
+      <td>Balwner</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7</td>
+      <td>RAEC Mons</td>
+      <td>Brice</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8</td>
+      <td>FCV Dender EH</td>
+      <td>Btisan</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	raw_data = {
         'id': ['1', '2', '3', '4', '5', '7', '8', '9',],
@@ -1390,52 +1579,335 @@ id	team_long_name	team_short_name
 	df_n = pd.DataFrame(raw_data, columns = ['id','team_fifa_api_id'])
 	df_n
 
-id	team_fifa_api_id
-0	1	673.0
-1	2	675.0
-2	3	15005.0
-3	4	2007.0
-4	5	1750.0
-5	7	229.0
-6	8	674.0
-7	9	1747.0
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[59]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_fifa_api_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>673.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>675.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>15005.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>2007.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>1750.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>7</td>
+      <td>229.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>8</td>
+      <td>674.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>9</td>
+      <td>1747.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	df_new = pd.concat([df_a, df_b])
 	df_new
 
-id	team_long_name		team_short_name
-0	1	Austria			AUT
-1	2	Belgium			BEL
-2	3	Cyprus			CYP
-3	4	Germany			GER
-4	5	Estonia			EST
-0	4	KSV Cercle BruggeBonder
-1	5	RSC Anderlecht	Black
-2	6	KAA Gent		Balwner
-3	7	RAEC Mons		Brice
-4	8	FCV Dender EH	Btisan
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[61]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Austria</td>
+      <td>AUT</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Belgium</td>
+      <td>BEL</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Cyprus</td>
+      <td>CYP</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Germany</td>
+      <td>GER</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Estonia</td>
+      <td>EST</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>KSV Cercle Brugge</td>
+      <td>Bonder</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5</td>
+      <td>RSC Anderlecht</td>
+      <td>Black</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6</td>
+      <td>KAA Gent</td>
+      <td>Balwner</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7</td>
+      <td>RAEC Mons</td>
+      <td>Brice</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>8</td>
+      <td>FCV Dender EH</td>
+      <td>Btisan</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	pd.concat([df_a, df_b], axis=1)
 
-id	team_long_name	team_short_name	id	team_long_name	team_short_name
-0	1	Austria	AUT	4	KSV Cercle Brugge	Bonder
-1	2	Belgium	BEL	5	RSC Anderlecht	Black
-2	3	Cyprus	CYP	6	KAA Gent	Balwner
-3	4	Germany	GER	7	RAEC Mons	Brice
-4	5	Estonia	EST	8	FCV Dender EH	Btisan
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[62]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Austria</td>
+      <td>AUT</td>
+      <td>4</td>
+      <td>KSV Cercle Brugge</td>
+      <td>Bonder</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Belgium</td>
+      <td>BEL</td>
+      <td>5</td>
+      <td>RSC Anderlecht</td>
+      <td>Black</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Cyprus</td>
+      <td>CYP</td>
+      <td>6</td>
+      <td>KAA Gent</td>
+      <td>Balwner</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Germany</td>
+      <td>GER</td>
+      <td>7</td>
+      <td>RAEC Mons</td>
+      <td>Brice</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Estonia</td>
+      <td>EST</td>
+      <td>8</td>
+      <td>FCV Dender EH</td>
+      <td>Btisan</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	pd.merge(df_new, df_n, on='id')
 
-id	team_long_name	team_short_name	team_fifa_api_id
-0	1	Austria	AUT	673.0
-1	2	Belgium	BEL	675.0
-2	3	Cyprus	CYP	15005.0
-3	4	Germany	GER	2007.0
-4	4	KSV Cercle Brugge	Bonder	2007.0
-5	5	Estonia	EST	1750.0
-6	5	RSC Anderlecht	Black	1750.0
-7	7	RAEC Mons	Brice	229.0
-8	8	FCV Dender EH	Btisan	674.0
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[63]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>team_long_name</th>
+      <th>team_short_name</th>
+      <th>team_fifa_api_id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Austria</td>
+      <td>AUT</td>
+      <td>673.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Belgium</td>
+      <td>BEL</td>
+      <td>675.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Cyprus</td>
+      <td>CYP</td>
+      <td>15005.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Germany</td>
+      <td>GER</td>
+      <td>2007.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>4</td>
+      <td>KSV Cercle Brugge</td>
+      <td>Bonder</td>
+      <td>2007.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>5</td>
+      <td>Estonia</td>
+      <td>EST</td>
+      <td>1750.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>5</td>
+      <td>RSC Anderlecht</td>
+      <td>Black</td>
+      <td>1750.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
+      <td>RAEC Mons</td>
+      <td>Brice</td>
+      <td>229.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8</td>
+      <td>FCV Dender EH</td>
+      <td>Btisan</td>
+      <td>674.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 # Create Engine
 
