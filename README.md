@@ -550,15 +550,99 @@ dtype: int64</pre></div></div></div><div class="btn btn-default output_collapsed
 
 	tables
 
-	type	name	tbl_name	rootpage	sql
-0	table	sqlite_sequence	sqlite_sequence	4	CREATE TABLE sqlite_sequence(name,seq)
-1	table	Player_Attributes	Player_Attributes	11	CREATE TABLE "Player_Attributes" (\n\t`id`\tIN...
-2	table	Player	Player	14	CREATE TABLE `Player` (\n\t`id`\tINTEGER PRIMA...
-3	table	Match	Match	18	CREATE TABLE `Match` (\n\t`id`\tINTEGER PRIMAR...
-4	table	League	League	24	CREATE TABLE `League` (\n\t`id`\tINTEGER PRIMA...
-5	table	Country	Country	26	CREATE TABLE `Country` (\n\t`id`\tINTEGER PRIM...
-6	table	Team	Team	29	CREATE TABLE "Team" (\n\t`id`\tINTEGER PRIMARY...
-7	table	Team_Attributes	Team_Attributes	2	CREATE TABLE `Team_Attributes` (\n\t`id`\tINTE...
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[45]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>type</th>
+      <th>name</th>
+      <th>tbl_name</th>
+      <th>rootpage</th>
+      <th>sql</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>table</td>
+      <td>sqlite_sequence</td>
+      <td>sqlite_sequence</td>
+      <td>4</td>
+      <td>CREATE TABLE sqlite_sequence(name,seq)</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>table</td>
+      <td>Player_Attributes</td>
+      <td>Player_Attributes</td>
+      <td>11</td>
+      <td>CREATE TABLE "Player_Attributes" (\n\t`id`\tIN...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>table</td>
+      <td>Player</td>
+      <td>Player</td>
+      <td>14</td>
+      <td>CREATE TABLE `Player` (\n\t`id`\tINTEGER PRIMA...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>table</td>
+      <td>Match</td>
+      <td>Match</td>
+      <td>18</td>
+      <td>CREATE TABLE `Match` (\n\t`id`\tINTEGER PRIMAR...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>table</td>
+      <td>League</td>
+      <td>League</td>
+      <td>24</td>
+      <td>CREATE TABLE `League` (\n\t`id`\tINTEGER PRIMA...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>table</td>
+      <td>Country</td>
+      <td>Country</td>
+      <td>26</td>
+      <td>CREATE TABLE `Country` (\n\t`id`\tINTEGER PRIM...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>table</td>
+      <td>Team</td>
+      <td>Team</td>
+      <td>29</td>
+      <td>CREATE TABLE "Team" (\n\t`id`\tINTEGER PRIMARY...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>table</td>
+      <td>Team_Attributes</td>
+      <td>Team_Attributes</td>
+      <td>2</td>
+      <td>CREATE TABLE `Team_Attributes` (\n\t`id`\tINTE...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 	countries = pd.read_sql("SELECT * FROM Country;", conn)
 	countries.head()
