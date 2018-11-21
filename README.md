@@ -174,7 +174,7 @@ create a list containing Pearson's correlation between 'overall_rating' with eac
 	correlations = [ df['overall_rating'].corr(df[f]) for f in cols ]
 	len(cols), len(correlations)
 	(34, 34)
-	
+
 We make sure that the number of selected features and the correlations calculated are the same, e.g., both 34 in this case. Next couple of cells show some lines of code that use pandas plaotting functions to create a 2D graph of these correlation vealues and column names.
 
 create a function for plotting a dataframe with string columns and numeric values
@@ -185,17 +185,21 @@ create a function for plotting a dataframe with string columns and numeric value
     fig.set_size_inches(20, 12)
     plt.ylabel(y_label)
 
+```markdown
+
     ax = df2.correlation.plot(linewidth=3.3, color=color)
     ax.set_xticks(df2.index)
     ax.set_xticklabels(df2.attributes, rotation=75); #Notice the ; (remove it and see what happens !)
     plt.show()
+```
+
 create a dataframe using cols and correlations
 
 	df2 = pd.DataFrame({'attributes': cols, 'correlation': correlations}) 
 let's plot above dataframe using the function we created
-    
+```markdown    
 	plot_dataframe(df2, 'Player\'s Overall Rating')
-
+```
 
 
 
