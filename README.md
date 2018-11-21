@@ -442,7 +442,7 @@ We plotted this dataframe using the function we created
 	plot_dataframe(df2, 'Player\'s Overall Rating')
 ```
 <p>
-	<img src=playerstats.png alt="png"
+	<img src="playerstats.jpeg" alt="png"
 </p>
 
 # Analysis of Findings
