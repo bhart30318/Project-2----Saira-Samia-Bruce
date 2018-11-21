@@ -445,6 +445,8 @@ We plotted this dataframe using the function we created
 	<img src="playerstats.png" alt="png"
 </p>
 
+CAN'T GET THE IMAGE TO SHOW ON THE PAGE --
+
 # Analysis of Findings
 
 	select5features = ['gk_kicking', 'potential', 'marking', 'interceptions', 'standing_tackle']
@@ -514,7 +516,7 @@ We plotted this dataframe using the function we created
   </tbody>
 </table>
 
-data = scale(df_select)
+	data = scale(df_select)
 
 	#Define number of clusters
 	noOfClusters = 4
@@ -528,12 +530,15 @@ data = scale(df_select)
 
 	pd.value_counts(model.labels_, sort=False)
 
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt"></div><div class="output_subarea output_text output_stream output_stdout"><pre>__________________________________________________________________________________________
+
 Count of players in each cluster
-0    50490
+__________________________________________________________________________________________
+</pre></div></div><div class="output_area"><div class="prompt output_prompt"><bdi>Out[42]:</bdi></div><div class="output_subarea output_text output_result"><pre>0    50490
 1    55903
 2    23777
 3    50184
-dtype: int64
+dtype: int64</pre></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 # Tables
 
