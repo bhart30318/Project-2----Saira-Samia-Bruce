@@ -142,7 +142,35 @@ We used the head function for data frames for this task. This gives us every col
 
 	df.head(5)
 
-<tbody>
+
+ <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>player_fifa_api_id</th>
+      <th>player_api_id</th>
+      <th>date</th>
+      <th>overall_rating</th>
+      <th>potential</th>
+      <th>preferred_foot</th>
+      <th>attacking_work_rate</th>
+      <th>defensive_work_rate</th>
+      <th>crossing</th>
+      <th>...</th>
+      <th>vision</th>
+      <th>penalties</th>
+      <th>marking</th>
+      <th>standing_tackle</th>
+      <th>sliding_tackle</th>
+      <th>gk_diving</th>
+      <th>gk_handling</th>
+      <th>gk_kicking</th>
+      <th>gk_positioning</th>
+      <th>gk_reflexes</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th>111083</th>
       <td>111084</td>
@@ -264,6 +292,7 @@ We used the head function for data frames for this task. This gives us every col
       <td>8.0</td>
     </tr>
   </tbody>
+</table>
 
 5 rows × 42 columns
 
