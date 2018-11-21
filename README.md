@@ -387,12 +387,13 @@ check how the features are correlated with the overall ratings
     	related = df['overall_rating'].corr(df[f])
     	print("%s: %f" % (f,related))
 
-acceleration: 0.243998
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt"></div><div class="output_subarea output_text output_stream output_stdout"><pre>acceleration: 0.243998
 curve: 0.357566
 free_kick_accuracy: 0.349800
 ball_control: 0.443991
 shot_power: 0.428053
 stamina: 0.325606
+</pre></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 Which features have the highest correlation with overall_rating?
 
