@@ -429,7 +429,7 @@ We make sure that the number of selected features and the correlations calculate
 
     ax = df2.correlation.plot(linewidth=3.3, color=color)
     ax.set_xticks(df2.index)
-    ax.set_xticklabels(df2.attributes, rotation=75); #Notice the ; (remove it and see what happens !)
+    ax.set_xticklabels(df2.attributes, rotation=75)
     plt.show()
     plt.savefig("playerstats.png")
 ```
