@@ -647,12 +647,57 @@ dtype: int64</pre></div></div></div><div class="btn btn-default output_collapsed
 	countries = pd.read_sql("SELECT * FROM Country;", conn)
 	countries.head()
 
-id	name
-0	1	Belgium
-1	1729	England
-2	4769	France
-3	7809	Germany
-4	10257	Italy
+<div class="output_wrapper"><div class="out_prompt_overlay prompt" title="click to scroll output; double click to hide"></div><div class="output"><div class="output_area"><div class="prompt output_prompt"><bdi>Out[47]:</bdi></div><div class="output_subarea output_html rendered_html output_result"><div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Belgium</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1729</td>
+      <td>England</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4769</td>
+      <td>France</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>7809</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10257</td>
+      <td>Italy</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div></div><div class="btn btn-default output_collapsed" title="click to expand output" style="display: none;">. . .</div></div>
 
 We reviewed the number of soccer teams in the world:
 
