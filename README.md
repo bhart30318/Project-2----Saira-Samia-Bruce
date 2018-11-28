@@ -445,8 +445,6 @@ We plotted this dataframe using the function we created
 	<img src="playerstats.png" alt="png">
 </p>
 
-CAN'T GET THE IMAGE TO SHOW ON THE PAGE --
-
 # Analysis of Findings
 
 	select5features = ['gk_kicking', 'potential', 'marking', 'interceptions', 'standing_tackle']
